@@ -1,0 +1,7 @@
+How to run:
+
+$ g++ main.cpp && ./a.out < billboards.txt
+
+or
+
+$ clang++ main.cpp && ./a.out < billboards.txt

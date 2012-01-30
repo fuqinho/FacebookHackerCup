@@ -1,13 +1,14 @@
 How to run:
-$ g++ main.cpp && ./a.out < example.in
-or
-$ clang++ main.cpp && ./a.out < example.in
+ $ g++ main.cpp && ./a.out < example.in
+ or
+ $ clang++ main.cpp && ./a.out < example.in
 
-- 2012
-  - Qualification Round
-      [Billboards] : System Test Passed
-      [Alphabet Soup] : System Test Passed
-  - Round 1
-      [Checkpoint] : System Test Passed
-      [Recover the Sequence] : System Test Passed
-      [Squished Status] : System Test Passed
+Results:
+ - 2012
+   - Qualification Round
+       [Billboards] : System Test Passed
+       [Alphabet Soup] : System Test Passed
+   - Round 1
+       [Checkpoint] : System Test Passed
+       [Recover the Sequence] : System Test Passed
+       [Squished Status] : System Test Passed

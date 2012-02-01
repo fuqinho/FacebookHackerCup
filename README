@@ -12,3 +12,26 @@ Results:
        [Checkpoint] : System Test Passed
        [Recover the Sequence] : System Test Passed
        [Squished Status] : System Test Passed
+
+Comments (in Japanese):
+- Billboards
+	フォントサイズをだんだん小さくして収まるかチェック。
+	改行前後のコーナーケースがめんどい。
+- Alphabet Soup
+	各文字カウントしてcが2倍必要なのにだけ気を付けて割る
+- Checkpoint
+	まず各格子点までのパターン数をDPで求めつつ、Xパターン
+	を達成する最小のステップ数を事前計算しておく。
+	チェックポイントまでP通り、それ以後はQ通りとすると、
+	P*Q=S(P<Q)になるPQの組み合わせを全部求める。O(logS)。
+	それぞれのP,Qに対する計算済みの最小ステップ数を足して、
+	最小を返す。
+- Recover the Sequence
+	"012345.."の配列を、debug sequenceに従ってマージソートを行う。
+	最初のN文字目が最後どこに来てるかわかるので、最初の配列が分かる
+- Squished Status
+	DP. N文字目までのパターン数は、N-3文字目までのパターン数と
+	N-2文字目までのバターン数とN-1文字目までのパターン数を足した物。
+	ただし、例えばN-3文字目までのパターン数は直近三文字が1 <= x <= M
+	の範囲に収まっていなければ足してはいけない。
+
